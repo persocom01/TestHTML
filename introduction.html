@@ -2,16 +2,32 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <!-- The title appears as the page name in a browser tab. -->
+    <title>HTML test page</title>
     <link rel="stylesheet" href="./css/master.css">
   </head>
   <body>
     <!-- div is an inline element, meaning there will not be a space
     between lines. p on the other hand, is a block level element. -->
-    <div>div</div>
-    <div>element</div>
-    <p>paragraph</p>
+    <div>
+      <a title="HTML tutorial" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">Tutorial link</a>
+    </div>
+    <!-- In html, multiple white spaces is reduced to 1.
+    It can be used to make the code more readable, however. -->
+    <h1>HTML   test   page</h1>
+    <!-- Vistually, strong and em are the same as b and i. -->
+    <div><strong>div</strong> <em>element</em></div>
+    <!-- Some characters, like "" or <> cannot be typed normally,
+    but rather represented by a character code or name. -->
+    <!-- A list can be found here:
+    https://www.rapidtables.com/web/html/html-codes.html -->
+    <p>paragraphs are represented using the &lt;p&gt; element.&#9971;</p>
     <!-- Some tags work without a closing tag. -->
     <img class="resize" src="./images/Mika desk.jpg" alt="">
+    <p>
+      <!-- Boolean attributes may be used shorhand like disabled
+      here instead of disabled="disabled" -->
+      <input type="text"><input type="text" disabled>
+    </p>
   </body>
 </html>
