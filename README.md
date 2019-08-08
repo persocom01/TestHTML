@@ -1,4 +1,4 @@
-# TestPython
+# TestHTML
 
 A html testing playground organized by topic in the html tutorial here: https://developer.mozilla.org/en-US/docs/Learn/HTML
 
