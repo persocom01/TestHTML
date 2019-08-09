@@ -7,7 +7,7 @@ of the page recognized as a different language. -->
     <meta charset="utf-8">
     <!-- The title appears as the page name in a browser tab. -->
     <title>HTML test page</title>
-    <!-- These twho meta tags are optional. The former can be used to store
+    <!-- These two meta tags are optional. The former can be used to store
     contact information and the latter is used by search engines. -->
     <meta name="author" content="persocom01">
     <meta name="description" content="html learning">
@@ -37,24 +37,30 @@ of the page recognized as a different language. -->
     <div>
       <a title="HTML tutorial" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">Tutorial link</a>
     </div>
-    <!-- Vistually, strong and em are the same as b and i. -->
-    <div><strong>div</strong> <em>element</em></div>
+    <!-- Vistually, strong and em are the same as b and i.
+    However, screen readers read them differently. -->
+    <div><strong>div</strong> <em><u>element</u></em></div>
     <!-- Some characters, like "" or <> cannot be typed normally,
     but rather represented by a character code or name. -->
     <!-- A list can be found here:
     https://www.rapidtables.com/web/html/html-codes.html -->
     <p>paragraphs are represented using the &lt;p&gt; element.&#9971;</p>
     <!-- Some tags work without a closing tag. -->
-    <img class="resize" src="./images/Mika desk.jpg" alt="">
+    <img class="align resize" src="./images/Mika desk.jpg" alt="">
     <p>
       <!-- Boolean attributes may be used shorhand like disabled
       here instead of disabled="disabled" -->
-      <input type="text" style="color:black;"><input type="text" disabled>
+      <input type="text"><input type="text" disabled>
     </p>
-    <ul>
-      <li>unordered</li>
+    <ol>
+      <li>ordered</li>
       <li>list</li>
-    </ul>
+        <ul>
+          <li>nested</li>
+          <li>unordered</li>
+          <li>list</li>
+        </ul>
+    </ol>
     <!-- JS elements are normally placed at the end of the body. -->
     <script src=""></script>
   </body>

@@ -1,27 +1,48 @@
 /* Demonstrates use of custom css. */
 
 /* * affects all elments. */
-/* With :not you can specify an element this css does not apply to. */
+/* With :not you can specify an element this css does not apply to.
+:not only accepts 1 argument. Thus to negate multiple elements, :not has to
+be used more than once. :not may accept multiple elements in future. */
 /* Other pseudo classes can be found here:
 https://www.w3.org/TR/selectors-3/ */
-*:not(button) {
-  color:white;
+*:not(button):not(input) {
+  color: white;
 }
 
+/* Sets limit to text length */
 body {
-  background-color:black;
-  text-align:center;
+  background-color: black;
+  max-width: 960px;
+  margin: auto;
 }
 
+/* Demonstrates selecting multiple elements. */
+h1, h2, h3, h4, h5, h6, div, p {
+  text-align: center;
+}
+
+ul li, ol li {
+  margin-left: 20%;
+}
+
+/* Changes the default underline. It is recommended because it looks like a
+link by default. */
+u {
+  text-decoration: none;
+  border-bottom: 3px red dashed;
+}
+
+/* .align applies this css to all img with class align. */
 /* Aligns images to the center. */
 img.align {
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* .resize applies this css to all img with class resize. */
 img.resize {
-  max-width:20%;
-  max-height:20%;
+  max-width: 40%;
+  max-height: 40%;
 }
