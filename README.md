@@ -6,7 +6,9 @@ Workable code is written on each topic to demonstrate use of html in the topic a
 
 ## Installation
 
-html can be run on any modern browser. Atom was used as text editor.
+A html file can be opened on any modern browser. However, certain features require the file to be uploaded to a server, and for that purpose, WinNMP was used to create a local virtual server. Atom was used as text editor.
+
+* [https://winnmp.wtriple.com/] - WinNMP 19.06
 
 ### General packages:
 

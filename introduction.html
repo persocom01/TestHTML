@@ -12,8 +12,8 @@ of the page recognized as a different language. -->
     <meta name="author" content="persocom01">
     <meta name="description" content="html learning">
     <!-- og or Open Graph was introduced by facebook in 2010.
-    it influences the page's thumbnail on social media sites.
-    the thumbnail's size is ideally 1200 x 1200 while still looking acceptable
+    It influences the page's thumbnail on social media sites.
+    The thumbnail's size is ideally 1200 x 1200 while still looking acceptable
     in 1200 x 630. -->
     <meta name="og:image" content="./images/Mika desk.jpg">
     <meta name="og:description" content="thumbnail description">
@@ -27,26 +27,44 @@ of the page recognized as a different language. -->
     <link rel="icon" type="image/png" href="./images/html icon.png">
   </head>
   <body>
-    <!-- In html, multiple white spaces is reduced to 1.
+    <!-- In html, multiple white spaces are reduced to 1.
     It can be used to make the code more readable, however. -->
     <!-- There are six levels of headings, h1 to h6, but it's recommended not
     to use more than 3. -->
     <h1>HTML   test   page</h1>
+    <p>
+      <a title="HTML tutorial" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">
+        <!-- A link need not be just text. -->
+        Tutorial link
+      </a>
+    </p>
     <!-- div is an inline element, meaning there will not be a space
     between lines. p on the other hand, is a block level element. -->
-    <div>
-      <a title="HTML tutorial" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">Tutorial link</a>
+    <div class="">
+      <!-- Makes the page jump to element with id but1. -->
+      <a href="#but1">bottom button</a>
     </div>
     <!-- Vistually, strong and em are the same as b and i.
     However, screen readers read them differently. -->
-    <div><strong>div</strong> <em><u>element</u></em></div>
+    <div class="">
+      <strong>div</strong> <em><u>element</u></em>
+    </div>
     <!-- Some characters, like "" or <> cannot be typed normally,
     but rather represented by a character code or name. -->
     <!-- A list can be found here:
     https://www.rapidtables.com/web/html/html-codes.html -->
     <p>paragraphs are represented using the &lt;p&gt; element.&#9971;</p>
     <!-- Some tags work without a closing tag. -->
-    <img class="align resize" src="./images/Mika desk.jpg" alt="">
+    <!-- ./ indicates current directory. .. indicates parent directory. -->
+    <img id="img1" class="align resize" src="./images/Mika desk.jpg" alt="">
+    <!-- download makes the link download instead of open. -->
+    <!-- While it is possible to make an image into a link, this method
+    turns the whole image block into a link instead of the image itself.
+    Solutions like using onclick or resizing the image block yourself,
+    but are either impractical or require code outside html and css. -->
+    <div class="">
+      <a href="./images/Mika desk.jpg?file=Mika desk" download>download link</a>
+    </div>
     <p>
       <!-- Boolean attributes may be used shorhand like disabled
       here instead of disabled="disabled" -->
@@ -61,6 +79,12 @@ of the page recognized as a different language. -->
           <li>list</li>
         </ul>
     </ol>
+    <div class="">
+      <!-- An empty fragment # will link to the top of page. -->
+      <a href="#">
+        <button id="but1" type="button" name="button">return to top</button>
+      </a>
+    </div>
     <!-- JS elements are normally placed at the end of the body. -->
     <script src=""></script>
   </body>
