@@ -58,10 +58,8 @@ of the page recognized as a different language. -->
     <!-- ./ indicates current directory. .. indicates parent directory. -->
     <img id="img1" class="align resize" src="./images/Mika desk.jpg" alt="">
     <!-- download makes the link download instead of open. -->
-    <!-- While it is possible to make an image into a link, this method
-    turns the whole image block into a link instead of the image itself.
-    Solutions like using onclick or resizing the image block yourself,
-    but are either impractical or require code outside html and css. -->
+    <!-- While it is possible to make the image a link, it would turns the
+    whole image block into a link instead of the image itself. -->
     <div class="">
       <a href="./images/Mika desk.jpg?file=Mika desk" download>download link</a>
     </div>
@@ -71,14 +69,23 @@ of the page recognized as a different language. -->
       <input type="text"><input type="text" disabled>
     </p>
     <ol>
-      <li>ordered</li>
-      <li>list</li>
+      <li>ordered list</li>
+      <li>nested unordered list:</li>
         <ul>
-          <li>nested</li>
-          <li>unordered</li>
-          <li>list</li>
+          <!-- mailto: is a special suffix for email links. -->
+          <li><a href="mailto:joe@example.com?subject=feedback">email me</a>"></li>
+          <li><a href="#">empty</a></li>
+          <li><a href="#">empty</a></li>
         </ul>
     </ol>
+    <dl class="">
+      <dt>introduction</dt>
+      <dd>the start of a story.</dd>
+      <dt>body</dt>
+      <dd>the meat and potatoes.</dd>
+      <dt>conclusion</dt>
+      <dd>the wrap up.</dd>
+    </dl>
     <div class="">
       <!-- An empty fragment # will link to the top of page. -->
       <a href="#">
