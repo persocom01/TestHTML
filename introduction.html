@@ -51,20 +51,41 @@ of the page recognized as a different language. -->
     <div class="">
       <strong>div</strong> <em><u>element</u></em>
     </div>
-    <!-- Demonstrates a blockquote. Cite current doesn't do much, but it
-    can be referenced in JS. -->
-    <blockquote cite="https://www.kingjamesbibleonline.org/Ecclesiastes-12-13/">
-      <!-- Code makes the text blocky. You may use it elsewhere as well. -->
-      <code>
-      Let us hear the conclusion of the whole matter:<br>
-      Fear God, and keep his commandments: for this is the whole duty of man.
-      </code>
-    </blockquote>
     <!-- Some characters, like "" or <> cannot be typed normally,
     but rather represented by a character code or name. -->
     <!-- A list can be found here:
     https://www.rapidtables.com/web/html/html-codes.html -->
     <p>paragraphs are represented using the &lt;p&gt; element.&#9971;</p>
+    <!-- Demonstrates a blockquote. Cite current doesn't do much, but it
+    can be referenced in JS. -->
+    <blockquote cite="https://www.kingjamesbibleonline.org/Ecclesiastes-12-13/">
+      <!-- Code makes the text blocky. You may use it elsewhere as well. -->
+      <code>
+        <!-- br = line break. -->
+        Let us hear the conclusion of the whole matter:<br>
+        Fear God, and keep his commandments: for this is the whole duty of man.
+      </code>
+    </blockquote>
+    <div class="">
+      In the code below, <var>button</var> is a variable that selects the
+      button at the bottom of this page. You may press <kbd>pgdown</kbd> until
+      you see it. It will result in the button text changing to
+      <samp>I've been clicked</samp> after being clicked once, and
+      <samp>Stop clicking me! >.<</samp> thereafter.
+    </div>
+    <!-- pre is a tag for that preserves the white space code often uses for
+    formatting. -->
+    <pre><code>
+      var button = document.querySelector('#but1')
+
+      button.addEventListener('click', () => {
+        if (button.innerHTML == 'initial') {
+          button.innerHTML = 'I\'ve been clicked.'
+        } else {
+          button.innerHTML = 'Stop clicking me! >.<'
+        }
+      })
+    </code></pre>
     <!-- Some tags work without a closing tag. -->
     <!-- ./ indicates current directory. .. indicates parent directory. -->
     <img id="img1" class="align resize" src="./images/Mika desk.jpg" alt="">
@@ -84,7 +105,7 @@ of the page recognized as a different language. -->
       <li>nested unordered list:</li>
         <ul>
           <!-- mailto: is a special suffix for email links. -->
-          <li><a href="mailto:joe@example.com?subject=feedback">email me</a>"></li>
+          <li><a href="mailto:joe@example.com?subject=feedback">email me</a></li>
           <li><a href="#">empty</a></li>
           <li><a href="#">empty</a></li>
         </ul>
@@ -93,7 +114,8 @@ of the page recognized as a different language. -->
       <dt>introduction</dt>
       <dd>the start of a story.</dd>
       <dt>body</dt>
-      <dd>the meat and potatoes.</dd>
+      <!-- Super and subscript. -->
+      <dd>the <sup>meat</sup> and <sub>potatoes</sub>.</dd>
       <dt>conclusion</dt>
       <dd>the wrap up.</dd>
     </dl>
@@ -103,6 +125,12 @@ of the page recognized as a different language. -->
         <button id="but1" type="button" name="button">return to top</button>
       </a>
     </div>
+    <!-- address is meant for the page author's contact details. -->
+    <address class="">
+      <div class="">
+        <a href="https://github.com/persocom01/TestHTML">Author's GitHub repository address. </a>
+      </div>
+    </address>
     <!-- JS elements are normally placed at the end of the body. -->
     <script src=""></script>
   </body>
