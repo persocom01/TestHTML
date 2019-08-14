@@ -26,6 +26,10 @@ ul li, ol li, dl {
   margin-left: 20%;
 }
 
+footer {
+  text-align: center;
+}
+
 /* Changes the default underline. It is recommended because it looks like a
 link by default. */
 u {
