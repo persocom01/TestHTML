@@ -7,13 +7,16 @@ be used more than once. :not may accept multiple elements in future. */
 /* Other pseudo classes can be found here:
 https://www.w3.org/TR/selectors-3/ */
 *:not(button):not(input) {
+  /* Text color. */
   color: white;
 }
 
 /* Sets limit to text length */
 body {
   background-color: black;
+  /* Max size of box. */
   max-width: 800px;
+  /* margin is the distance a box is from other boxes. */
   margin: auto;
 }
 
@@ -45,6 +48,7 @@ aside {
     color: #66ff99;
 }
 
+/* Applies to p elements whose parent is aside. */
 aside > p {
     margin: .5rem;
     color: #66ff99;

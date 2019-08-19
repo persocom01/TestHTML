@@ -74,16 +74,25 @@ of the page recognized as a different language. -->
 
       <!-- main is further divided into articles. -->
       <article class="">
-        <!-- Some characters, like "" or <> cannot be typed normally,
-        but rather represented by a character code or name. -->
-        <!-- A list can be found here:
-        https://www.rapidtables.com/web/html/html-codes.html -->
-        <p>paragraphs are represented using the &lt;p&gt; element.&#9971;</p>
-        <p>paragraphs come with spaces before and after.</p>
-        <!-- Vistually, strong and em are the same as b and i.
-        However, screen readers read them differently. -->
-        <div class=""><strong>strong div <u>element</u></strong></div>
-        <div class=""><em>em div <u>element</u></em></div>
+
+        <!-- articles can be divided into sections, which normally have their
+        own header. -->
+        <section>
+          <!-- Some characters, like "" or <> cannot be typed normally,
+          but rather represented by a character code or name. -->
+          <!-- A list can be found here:
+          https://www.rapidtables.com/web/html/html-codes.html -->
+          <p>paragraphs are represented using the &lt;p&gt; element.&#9971;</p>
+          <p>paragraphs come with spaces before and after.</p>
+        </section>
+
+        <section>
+          <!-- Vistually, strong and em are the same as b and i.
+          However, screen readers read them differently. -->
+          <div class=""><strong>strong div <u>element</u></strong></div>
+          <div class=""><em>em div <u>element</u></em></div>
+        </section>
+
       </article>
 
       <article class="">
@@ -96,6 +105,8 @@ of the page recognized as a different language. -->
             Let us hear the conclusion of the whole matter:<br>
             Fear God, and keep his commandments: for this is the whole duty of man.
           </code>
+          <!-- hr = horizontal rule. -->
+          <hr>
         </blockquote>
       </article>
 
@@ -106,7 +117,7 @@ of the page recognized as a different language. -->
           button at the bottom of this page. You may press <kbd>pgdown</kbd> until
           you see it. It will result in the button text changing to
           <samp>I've been clicked</samp> after being clicked once, and
-          <samp>Stop clicking me! >.<</samp> thereafter.
+          <samp>Stop clicking me! >.&lt;</samp> thereafter.
         </p>
       </aside>
 
@@ -127,22 +138,27 @@ of the page recognized as a different language. -->
         </code></pre>
       </article>
 
-      <!-- ./ indicates current directory. .. indicates parent directory. -->
-      <img id="img1" class="align resize" src="./images/Mika desk.jpg" alt="">
-      <!-- download makes the link download instead of open. -->
+      <article class="">
+        <!-- ./ indicates current directory. .. indicates parent directory. -->
+        <img id="img1" class="align resize" src="./images/Mika desk.jpg" alt="">
+        <!-- download makes the link download instead of open. -->
+        <div class="">
+          <a href="./images/Mika desk.jpg?file=Mika desk" download>download link</a>
+        </div>
+      </article>
 
-      <div class="">
-        <a href="./images/Mika desk.jpg?file=Mika desk" download>download link</a>
-      </div>
-      <dl class="">
-        <dt>introduction</dt>
-        <dd>the start of a story.</dd>
-        <dt>body</dt>
-        <!-- Super and subscript. -->
-        <dd>the <sup>meat</sup> and <sub>potatoes</sub>.</dd>
-        <dt>conclusion</dt>
-        <dd>the wrap up.</dd>
-      </dl>
+      <article class="">
+        <dl class="">
+          <dt>introduction</dt>
+          <dd>the start of a story.</dd>
+          <dt>body</dt>
+          <!-- Super and subscript. -->
+          <dd>the <sup>meat</sup> and <sub>potatoes</sub>.</dd>
+          <dt>conclusion</dt>
+          <dd>the wrap up.</dd>
+        </dl>
+      </article>
+
     </main>
 
     <!-- The footer normally contains things like copyright or contact info. -->
@@ -153,9 +169,9 @@ of the page recognized as a different language. -->
           <a href="https://github.com/persocom01/TestHTML">Author's GitHub repository address. </a>
         </address>
         <!-- An empty fragment # will link to the top of page. -->
-        <a href="#">
-          <button id="but1" type="button" name="button">return to top</button>
-        </a>
+        <form id="but1" class="" action="#" method="post">
+          <input type="submit" value="return to top">
+        </form>
       </p>
     </footer>
 
