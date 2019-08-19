@@ -14,3 +14,13 @@ time.datetime = currentDate
 time.textContent = currentDate
 div.appendChild(time)
 document.body.appendChild(div)
+
+var button = document.querySelector('#but1')
+
+button.addEventListener('click', () => {
+  if (button.value === 'return to top') {
+    button.value = 'I\'ve been clicked.'
+  } else {
+    button.value = 'Stop clicking me! >.<'
+  }
+})

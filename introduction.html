@@ -127,12 +127,12 @@ of the page recognized as a different language. -->
         purposes in a text editor like atom. -->
         <pre><code>
           var button = document.querySelector('#but1')
-
+          
           button.addEventListener('click', () => {
-            if (button.innerHTML == 'initial') {
-              button.innerHTML = 'I\'ve been clicked.'
+            if (button.value === 'return to top') {
+              button.value = 'I\'ve been clicked.'
             } else {
-              button.innerHTML = 'Stop clicking me! >.<'
+              button.value = 'Stop clicking me! >.<'
             }
           })
         </code></pre>
@@ -169,8 +169,8 @@ of the page recognized as a different language. -->
           <a href="https://github.com/persocom01/TestHTML">Author's GitHub repository address. </a>
         </address>
         <!-- An empty fragment # will link to the top of page. -->
-        <form id="but1" class="" action="#" method="post">
-          <input type="submit" value="return to top">
+        <form class="" action="#" method="get">
+          <input id="but1" type="submit" value="return to top">
         </form>
       </p>
     </footer>
