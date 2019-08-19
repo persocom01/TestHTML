@@ -26,113 +26,140 @@ of the page recognized as a different language. -->
     this tutorial, just know that they exist is enough. -->
     <link rel="icon" type="image/png" href="./images/html icon.png">
   </head>
-  <body>
-    <!-- In html, multiple white spaces are reduced to 1.
-    It can be used to make the code more readable, however. -->
-    <!-- There are six levels of headings, h1 to h6, but it's recommended not
-    to use more than 3. -->
-    <!-- abbr or abbreviation makes the title text appear on mouseover, as well
-    as adding a dotted underline. -->
-    <h1><abbr title="Hypertext Markup Language">HTML</abbr>   test   page</h1>
-    <p>
-      <a title="HTML tutorial" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">
-        <!-- A link need not be just text. -->
-        Tutorial link
-      </a>
-    </p>
-    <!-- div is an inline element, meaning there will not be a space
-    between lines. p on the other hand, is a block level element. -->
-    <div class="">
-      <!-- Makes the page jump to element with id but1. -->
-      <a href="#but1">bottom button</a>
-    </div>
-    <!-- Vistually, strong and em are the same as b and i.
-    However, screen readers read them differently. -->
-    <div class="">
-      <strong>div</strong> <em><u>element</u></em>
-    </div>
-    <!-- Some characters, like "" or <> cannot be typed normally,
-    but rather represented by a character code or name. -->
-    <!-- A list can be found here:
-    https://www.rapidtables.com/web/html/html-codes.html -->
-    <p>paragraphs are represented using the &lt;p&gt; element.&#9971;</p>
-    <!-- Demonstrates a blockquote. Cite current doesn't do much, but it
-    can be referenced in JS. -->
-    <blockquote cite="https://www.kingjamesbibleonline.org/Ecclesiastes-12-13/">
-      <!-- Code makes the text blocky. You may use it elsewhere as well. -->
-      <code>
-        <!-- br = line break. -->
-        Let us hear the conclusion of the whole matter:<br>
-        Fear God, and keep his commandments: for this is the whole duty of man.
-      </code>
-    </blockquote>
-    <div class="">
-      In the code below, <var>button</var> is a variable that selects the
-      button at the bottom of this page. You may press <kbd>pgdown</kbd> until
-      you see it. It will result in the button text changing to
-      <samp>I've been clicked</samp> after being clicked once, and
-      <samp>Stop clicking me! >.<</samp> thereafter.
-    </div>
-    <!-- pre is a tag for that preserves the white space code often uses for
-    formatting. -->
-    <pre><code>
-      var button = document.querySelector('#but1')
 
-      button.addEventListener('click', () => {
-        if (button.innerHTML == 'initial') {
-          button.innerHTML = 'I\'ve been clicked.'
-        } else {
-          button.innerHTML = 'Stop clicking me! >.<'
-        }
-      })
-    </code></pre>
-    <!-- Some tags work without a closing tag. -->
-    <!-- ./ indicates current directory. .. indicates parent directory. -->
-    <img id="img1" class="align resize" src="./images/Mika desk.jpg" alt="">
-    <!-- download makes the link download instead of open. -->
-    <!-- While it is possible to make the image a link, it would turns the
-    whole image block into a link instead of the image itself. -->
-    <div class="">
-      <a href="./images/Mika desk.jpg?file=Mika desk" download>download link</a>
-    </div>
-    <p>
-      <!-- Boolean attributes may be used shorhand like disabled
-      here instead of disabled="disabled" -->
-      <input type="text"><input type="text" disabled>
-    </p>
-    <ol>
-      <li>ordered list</li>
-      <li>nested unordered list:</li>
-        <ul>
-          <!-- mailto: is a special suffix for email links. -->
-          <li><a href="mailto:joe@example.com?subject=feedback">email me</a></li>
-          <li><a href="#">empty</a></li>
-          <li><a href="#">empty</a></li>
-        </ul>
-    </ol>
-    <dl class="">
-      <dt>introduction</dt>
-      <dd>the start of a story.</dd>
-      <dt>body</dt>
-      <!-- Super and subscript. -->
-      <dd>the <sup>meat</sup> and <sub>potatoes</sub>.</dd>
-      <dt>conclusion</dt>
-      <dd>the wrap up.</dd>
-    </dl>
+  <body>
+
+    <!-- The header is often the same on all pages on a website. -->
+    <header>
+      <!-- In html, multiple white spaces are reduced to 1.
+      It can be used to make the code more readable, however. -->
+      <!-- There are six levels of headings, h1 to h6, but it's recommended not
+      to use more than 3. -->
+      <!-- abbr or abbreviation makes the title text appear on mouseover, as well
+      as adding a dotted underline. -->
+      <h1><abbr title="Hypertext Markup Language">HTML</abbr>   test   page</h1>
+    </header>
+
+    <!-- The navigation bar. -->
+    <nav>
+      <ol>
+        <li>ordered list</li>
+        <li>nested unordered list:</li>
+          <ul>
+            <!-- A link need not be just text. However, while it is possible
+            to make an image a link, it would turns the whole image block into
+            a link instead of the image itself, so exercise caution on use. -->
+            <li><a title="HTML tutorial" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">Tutorial link</a></li>
+            <!-- mailto: is a special suffix for email links. -->
+            <li><a href="mailto:joe@example.com?subject=feedback">email me</a></li>
+            <!-- Makes the page jump to element with id but1. -->
+            <li><a href="#but1">bottom button</a></li>
+          </ul>
+      </ol>
+      <!-- div is an inline element, meaning there will not be a space
+      before and after. p on the other hand, is a block level element. -->
+      <div class="">
+        <!-- Nav often contains links and a searchbar. -->
+        <form class="" action="index.html" method="post">
+          <input type="text" name="" value="">
+          <!-- Boolean attributes may be used shorhand like disabled
+          here instead of disabled="disabled" -->
+          <input type="text" name="" value="" disabled>
+        </form>
+      </div>
+    </nav>
+
+    <!-- After nav comes the page's main content. -->
+    <main>
+
+      <!-- main is further divided into articles. -->
+      <article class="">
+        <!-- Some characters, like "" or <> cannot be typed normally,
+        but rather represented by a character code or name. -->
+        <!-- A list can be found here:
+        https://www.rapidtables.com/web/html/html-codes.html -->
+        <p>paragraphs are represented using the &lt;p&gt; element.&#9971;</p>
+        <p>paragraphs come with spaces before and after.</p>
+        <!-- Vistually, strong and em are the same as b and i.
+        However, screen readers read them differently. -->
+        <div class=""><strong>strong div <u>element</u></strong></div>
+        <div class=""><em>em div <u>element</u></em></div>
+      </article>
+
+      <article class="">
+        <!-- Demonstrates a blockquote. Cite current doesn't do much, but it
+        can be referenced in JS. -->
+        <blockquote cite="https://www.kingjamesbibleonline.org/Ecclesiastes-12-13/">
+          <!-- Code makes the text blocky. You may use it elsewhere as well. -->
+          <code>
+            <!-- br = line break. -->
+            Let us hear the conclusion of the whole matter:<br>
+            Fear God, and keep his commandments: for this is the whole duty of man.
+          </code>
+        </blockquote>
+      </article>
+
+      <!-- aside is often used to put content beside a main article -->
+      <aside class="">
+        <p>
+          In the code to the left, <var>button</var> is a variable that selects the
+          button at the bottom of this page. You may press <kbd>pgdown</kbd> until
+          you see it. It will result in the button text changing to
+          <samp>I've been clicked</samp> after being clicked once, and
+          <samp>Stop clicking me! >.<</samp> thereafter.
+        </p>
+      </aside>
+
+      <article class="">
+        <!-- pre is a tag for that preserves the white space code often uses for
+        formatting. Note that this includes the whitespace used for formatting
+        purposes in a text editor like atom. -->
+        <pre><code>
+          var button = document.querySelector('#but1')
+
+          button.addEventListener('click', () => {
+            if (button.innerHTML == 'initial') {
+              button.innerHTML = 'I\'ve been clicked.'
+            } else {
+              button.innerHTML = 'Stop clicking me! >.<'
+            }
+          })
+        </code></pre>
+      </article>
+
+      <!-- ./ indicates current directory. .. indicates parent directory. -->
+      <img id="img1" class="align resize" src="./images/Mika desk.jpg" alt="">
+      <!-- download makes the link download instead of open. -->
+
+      <div class="">
+        <a href="./images/Mika desk.jpg?file=Mika desk" download>download link</a>
+      </div>
+      <dl class="">
+        <dt>introduction</dt>
+        <dd>the start of a story.</dd>
+        <dt>body</dt>
+        <!-- Super and subscript. -->
+        <dd>the <sup>meat</sup> and <sub>potatoes</sub>.</dd>
+        <dt>conclusion</dt>
+        <dd>the wrap up.</dd>
+      </dl>
+    </main>
+
+    <!-- The footer normally contains things like copyright or contact info. -->
+    <footer>
+      <p>
+        <!-- address is meant for the page author's contact details. -->
+        <address class="">
+          <a href="https://github.com/persocom01/TestHTML">Author's GitHub repository address. </a>
+        </address>
+        <!-- An empty fragment # will link to the top of page. -->
+        <a href="#">
+          <button id="but1" type="button" name="button">return to top</button>
+        </a>
+      </p>
+    </footer>
+
     <!-- JS elements are normally placed at the end of the body. -->
     <script src="introduction.js"></script>
   </body>
-  <!-- The footer normally contains things like copyright or contact info. -->
-  <footer>
-    <p>
-      <!-- address is meant for the page author's contact details. -->
-      <address class="">
-        <a href="https://github.com/persocom01/TestHTML">Author's GitHub repository address. </a>
-      </address>
-      <!-- An empty fragment # will link to the top of page. -->
-      <a href="#">
-        <button id="but1" type="button" name="button">return to top</button>
-      </a>
-    </p>
-  </footer>
 </html>
