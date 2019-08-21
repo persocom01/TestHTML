@@ -39,7 +39,8 @@ aside {
     /* margin is the distance a box is from other boxes. */
     margin-left: .5rem;
     /* float allows an element to vertically span more than 1 line of text,
-    as well as specifies which side of the text it will be. */
+    as well as specifies which side of the text it will be. It is none by
+    default. */
     float: right;
     /* inset changes the shadow from outside the box to inside. */
     /* The other arguments are x, y, sharpness (optional), size (optional)
