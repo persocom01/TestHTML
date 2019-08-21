@@ -20,6 +20,7 @@ of the page recognized as a different language. -->
     <meta name="og:title" content="thumbnail title">
     <!-- External css stylesheet. -->
     <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/nav.css">
     <!-- icon determines the icon on the page tab.
     Modern browsers prefer png images. Chrome uses 196 x 196. -->
     <!-- There are icons for other purposes as well, but for the purpose of
@@ -42,22 +43,15 @@ of the page recognized as a different language. -->
 
     <!-- The navigation bar. -->
     <nav>
-      <ol>
-        <li>ordered list</li>
-        <li>nested unordered list:</li>
-          <ul>
-            <!-- A link need not be just text. However, while it is possible
-            to make an image a link, it would turns the whole image block into
-            a link instead of the image itself, so exercise caution on use. -->
-            <li><a title="HTML tutorial" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">Tutorial link</a></li>
-            <!-- mailto: is a special suffix for email links. -->
-            <li><a href="mailto:joe@example.com?subject=feedback">email me</a></li>
-            <!-- Makes the page jump to element with id but1. -->
-            <li><a href="#but1">bottom button</a></li>
-          </ul>
-      </ol>
       <!-- div is an inline element, meaning there will not be a space
       before and after. p on the other hand, is a block level element. -->
+      <div class="topnav">
+        <!-- A link need not be just text. However, while it is possible
+        to make an image a link, it would turns the whole image block into
+        a link instead of the image itself, so exercise caution on use. -->
+        <a title="HTML tutorial" href="./introduction.html">Home</a>
+        <a title="HTML tutorial" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">Tutorial link</a>
+      </div>
       <div class="">
         <!-- Nav often contains links and a searchbar. -->
         <form class="" action="index.html" method="post">
@@ -127,7 +121,7 @@ of the page recognized as a different language. -->
         purposes in a text editor like atom. -->
         <pre><code>
           var button = document.querySelector('#but1')
-          
+
           button.addEventListener('click', () => {
             if (button.value === 'return to top') {
               button.value = 'I\'ve been clicked.'
@@ -145,6 +139,20 @@ of the page recognized as a different language. -->
         <div class="">
           <a href="./images/Mika desk.jpg?file=Mika desk" download>download link</a>
         </div>
+      </article>
+
+      <article class="">
+        <ol>
+          <li>ordered list</li>
+          <li>nested unordered list:</li>
+            <ul>
+              <li><a title="HTML tutorial" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">Tutorial link</a></li>
+              <!-- mailto: is a special suffix for email links. -->
+              <li><a href="mailto:joe@example.com?subject=feedback">email me</a></li>
+              <!-- Makes the page jump to element with id but1. -->
+              <li><a href="#but1">bottom button</a></li>
+            </ul>
+        </ol>
       </article>
 
       <article class="">
