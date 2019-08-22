@@ -59,15 +59,16 @@ of the page recognized as a different language. -->
             <a href="https://github.com/persocom01/TestPython">Python</a>
           </div>
         </div>
-      </div>
-      <div class="">
-
-        <form class="" action="./action_page.php" method="get">
-          <input type="text" name="" value="Search">
-          <!-- Boolean attributes may be used shorhand like disabled
-          here instead of disabled="disabled" -->
-          <input type="text" name="" value="" disabled>
-        </form>
+        <div class="search-container">
+          <form class="" action="./action_page.php" method="get">
+            <!-- Boolean attributes may be used shorhand like disabled
+            here instead of disabled="disabled" -->
+            <!-- placeholder determines the text that you see in the box
+            before you write anything in it. -->
+            <input type="text" name="search" placeholder="Search">
+            <button type="submit" name="button">submit</button>
+          </form>
+        </div>
       </div>
     </nav>
 

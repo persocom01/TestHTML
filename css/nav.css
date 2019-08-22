@@ -53,6 +53,9 @@
   border: none;
   color: #66ccff;
   font-size: 17px;
+  /* padding is a box if only a single value is given.
+  It affects vertical and horizontal if 2 values are given.
+  More than that and it starts to fill top, right, bottom and left if possible. */
   padding: 14px 16px;
 }
 
@@ -90,3 +93,29 @@
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
+
+.topnav .search-container {
+  float: right;
+}
+
+/* Targets input with attribute type=text. */
+/* Affects the style of the search box. */
+.topnav input[type=text] {
+  border: none;
+  font-size: 17px;
+  padding: 6px;
+  /* This makes the top padding 14 in total, in line with the rest of the bar. */
+  margin-top: 8px;
+}
+
+.topnav .search-container button {
+  color: #66ccff;
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #4d4d4d;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
