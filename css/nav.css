@@ -108,14 +108,24 @@
   margin-top: 8px;
 }
 
+/* Affect the seach icon box. */
 .topnav .search-container button {
-  color: #66ccff;
   float: right;
   padding: 6px 10px;
   margin-top: 8px;
   margin-right: 16px;
-  background: #4d4d4d;
+  background: black;
   font-size: 17px;
   border: none;
   cursor: pointer;
+}
+
+/* Customizes the imported search icon. */
+.fa.fa-search {
+  color: #66ccff;
+}
+
+/* Sets hover color change. */
+.topnav .search-container button:hover {
+  background: #4d4d4d;
 }
