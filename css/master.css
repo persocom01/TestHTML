@@ -1,5 +1,10 @@
 /* Demonstrates use of custom css. */
 
+/* Makes the screen scroll smoothly instead of jump between jump links. */
+html {
+  scroll-behavior: smooth;
+}
+
 /* * affects all elments. */
 /* With :not you can specify an element this css does not apply to.
 :not only accepts 1 argument. Thus to negate multiple elements, :not has to
