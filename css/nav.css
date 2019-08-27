@@ -18,7 +18,10 @@
 
 /* Color of navbar. */
 .topnav {
+  /* Setting color and background on the parent makes it easy for child
+  elements to just inherit the color for consistency. */
   background-color: black;
+  color: #66ccff;
   /* Overflow determines what happens when content exceeds it's container.
   It is visible by default. Hidden hides it, auto creates a scrollbar. */
   overflow: hidden;
@@ -26,7 +29,7 @@
 
 /* Color of links. */
 .topnav a {
-  color: #66ccff;
+  color: inherit;
   float: left;
   font-size: 17px;
   padding: 14px 16px;
@@ -37,12 +40,16 @@
 /* Add a color to the current link */
 /* Probably requires JS to dynamically add the active class to a link. */
 .topnav a.active {
-  background-color: #66ff99;
-  color: white;
+  background-color: inherit;
+  /* Creates underline inside div element. */
+  box-shadow: inset 0 -3px #66ccff;
+  color: inherit;
 }
 
 /* Puts the dropdown div on the same level as topnav. */
 .dropdown {
+  background-color: inherit;
+  color: inherit;
   float: left;
   overflow: hidden;
 }
@@ -51,7 +58,7 @@
 .dropdown .dropbtn {
   background-color: inherit;
   border: none;
-  color: #66ccff;
+  color: inherit;
   font-size: 17px;
   /* padding is a box if only a single value is given.
   It affects vertical and horizontal if 2 values are given.
@@ -62,16 +69,17 @@
 /* Changes the color of links on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
   background-color: #4d4d4d;
-  color: #66ccff;
+  color: inherit;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
+  color: inherit;
   /* Makes block invisible. */
   display: none;
   /* Ensures that the block doesn't displace other blocks when it appears. */
   position: absolute;
-  background-color: black;
+  background-color: inherit;
   /* Makes the menu of consistent width. */
   min-width: 160px;
   /* Determines who is on top when block overlap. The larger number wins. */
@@ -80,7 +88,7 @@
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: #66ccff;
+  color: inherit;
   float: none;
   padding: 14px 16px;
   text-decoration: none;
@@ -114,7 +122,7 @@
   padding: 6px 10px;
   margin-top: 8px;
   margin-right: 16px;
-  background: black;
+  background: inherit;
   font-size: 17px;
   border: none;
   cursor: pointer;

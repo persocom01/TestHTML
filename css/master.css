@@ -1,6 +1,6 @@
 /* Demonstrates use of custom css. */
 
-/* Makes the screen scroll smoothly instead of jump between jump links. */
+/* Makes the screen scroll smoothly instead of jump between intrapage links. */
 html {
   scroll-behavior: smooth;
 }
