@@ -196,9 +196,12 @@ of the page recognized as a different language. -->
     </footer>
 
     <!-- Return to top button. -->
-    <a id="but2" href="#" onclick="returnToTop()"><i class="fas fa-chevron-up"></i></a>
+    <!-- return false is used to counteract default behaviour in browsers
+    in the case of onclick being a link. -->
+    <a id="but2" href="#" onclick="returnToTop(); return false;"><i class="fas fa-chevron-up"></i></a>
 
     <!-- JS elements are normally placed at the end of the body. -->
     <script src="introduction.js"></script>
+    <script src="scrollToTop.js"></script>
   </body>
 </html>

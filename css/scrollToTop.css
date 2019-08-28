@@ -1,7 +1,9 @@
 /* css for the scroll to top button. */
 
 #but2 {
-  display: inline-block; /* Hidden by default */
+  /* Typically you'll set this to none, but for this button we're using the
+  transform property instead. */
+  display: 'inline-block';
   position: fixed;
   /* Positioning. */
   bottom: 20px;
@@ -13,10 +15,12 @@
   background-color: #555;
   color: black;
   cursor: pointer;
-
   padding: 15px 17px 15px 17px;
   border-radius: 50%;
   font-size: 17px;
+  /* Makes the button appear from small to big with JS. */
+  transform: scale(0);
+  transition: transform 0.2s;
 }
 
 #but2:hover {
