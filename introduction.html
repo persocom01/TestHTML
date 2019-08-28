@@ -18,16 +18,17 @@ of the page recognized as a different language. -->
     <meta name="og:image" content="./images/Mika desk.jpg">
     <meta name="og:description" content="thumbnail description">
     <meta name="og:title" content="thumbnail title">
-    <!-- This is an online external icon library. -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- External css stylesheet. -->
     <link rel="stylesheet" href="./css/master.css">
     <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/scrollToTopButton.css">
     <!-- icon determines the icon on the page tab.
     Modern browsers prefer png images. Chrome uses 196 x 196. -->
     <!-- There are icons for other purposes as well, but for the purpose of
     this tutorial, just know that they exist is enough. -->
     <link rel="icon" type="image/png" href="./images/html icon.png">
+    <!-- Font Awesome icon kit. -->
+    <script src="https://kit.fontawesome.com/6ab3db8113.js"></script>
   </head>
 
   <body>
@@ -68,7 +69,7 @@ of the page recognized as a different language. -->
             <!-- placeholder determines the text that you see in the box
             before you write anything in it. -->
             <input type="text" name="search" placeholder="Search">
-            <button type="submit" name="button"><i class="fa fa-search"></i></button>
+            <button type="submit" name="button"><i class="fas fa-search"></i></button>
           </form>
         </div>
       </div>
@@ -193,6 +194,8 @@ of the page recognized as a different language. -->
         </form>
       </p>
     </footer>
+
+    <button onclick="returnToTop()" id="but2" title="return to top"><i class="fas fa-chevron-up"></i></button>
 
     <!-- JS elements are normally placed at the end of the body. -->
     <script src="introduction.js"></script>

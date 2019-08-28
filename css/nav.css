@@ -68,7 +68,7 @@
 
 /* Changes the color of links on hover */
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #4d4d4d;
+  background-color: #555;
   color: inherit;
 }
 
@@ -97,7 +97,7 @@
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #4d4d4d;}
+.dropdown-content a:hover {background-color: #555;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
@@ -129,11 +129,11 @@
 }
 
 /* Customizes the imported search icon. */
-.fa.fa-search {
+.fas.fa-search {
   color: #66ccff;
 }
 
 /* Sets hover color change. */
 .topnav .search-container button:hover {
-  background: #4d4d4d;
+  background: #555;
 }
