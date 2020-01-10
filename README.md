@@ -8,8 +8,8 @@ Workable code is written on each topic to demonstrate use of html in the topic a
 
 A html file can be opened on any modern browser. However, certain features require the file to be uploaded to a server, and for that purpose, WinNMP was used to create a local virtual server. Atom was used as text editor.
 
-* [atom_1.40.1](https://atom.io/)
 * [WinNMP 19.06](https://winnmp.wtriple.com/)
+* [atom 1.40.1](https://atom.io/)
 
 ### General packages:
 
