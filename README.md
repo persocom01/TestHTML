@@ -11,6 +11,11 @@ A html file can be opened on any modern browser. However, certain features requi
 * [WinNMP 19.06](https://winnmp.wtriple.com/)
 * [atom 1.40.1](https://atom.io/)
 
+Once the local server is running, access the file by opening the browser and typing:
+```
+http://127.0.0.1/project_name/file_name
+```
+
 ### General packages:
 
 * atom-beautify
