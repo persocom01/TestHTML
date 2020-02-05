@@ -67,6 +67,10 @@
 }
 
 /* Changes the color of links on hover */
+/* Other useful attributes are :first-child and :last-child, which can be
+chained with hover:
+:first-child:hover
+This makes only the first or last elements change color. */
 .topnav a:hover, .dropdown:hover .dropbtn {
   background-color:#555;
   color:inherit;
