@@ -9,7 +9,7 @@
   bottom:20px;
   right:20px;
   /* Always on top. */
-  z-index:99;
+  z-index:999;
   border:none;
   outline:none;
   background-color:#555;
