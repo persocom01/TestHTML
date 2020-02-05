@@ -2,7 +2,7 @@
 
 /* Makes the screen scroll smoothly instead of jump between intrapage links. */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 
 /* * affects all elments. */
@@ -13,74 +13,74 @@ be used more than once. :not may accept multiple elements in future. */
 https://www.w3.org/TR/selectors-3/ */
 *:not(button):not(input) {
   /* Text color. */
-  color: white;
+  color:white;
 }
 
 /* Sets limit to text length */
 body {
-  background-color: black;
+  background-color:black;
   /* Max size of box. */
-  max-width: 800px;
+  max-width:800px;
   /* margin is the distance a box is from other boxes. */
-  margin: auto;
+  margin:auto;
 }
 
 /* Demonstrates selecting multiple elements. */
 h1, h2, h3, h4, h5, h6, div, p, button {
-  text-align: center;
+  text-align:center;
 }
 
 ul li, ol li, dl {
-  margin-left: 20%;
+  margin-left:20%;
 }
 
 aside {
-    width: 40%;
+    width:40%;
     /* rem is a unit equal to the front size of the root element. */
     /* It is different from em being that em is affected when front size of
     the parent element is changed. */
     /* padding is the distance text is from it's box. */
-    padding-left: .5rem;
+    padding-left:.5rem;
     /* margin is the distance a box is from other boxes. */
-    margin-left: .5rem;
+    margin-left:.5rem;
     /* float allows an element to vertically span more than 1 line of text,
     as well as specifies which side of the text it will be. It is none by
     default. */
-    float: right;
+    float:right;
     /* inset changes the shadow from outside the box to inside. */
     /* The other arguments are x, y, sharpness (optional), size (optional)
     and color (default black). */
-    box-shadow: inset 5px 0 5px -5px #66ff99;
-    color: #66ff99;
+    box-shadow:inset 5px 0 5px -5px #66ff99;
+    color:#66ff99;
 }
 
 /* Applies to p elements whose parent is aside. */
 aside > p {
-    margin: .5rem;
-    color: #66ff99;
+    margin:.5rem;
+    color:#66ff99;
 }
 
 footer {
-  text-align: center;
+  text-align:center;
 }
 
 /* Changes the default underline. It is recommended because it looks like a
 link by default. */
 u {
-  text-decoration: none;
-  border-bottom: 3px red dashed;
+  text-decoration:none;
+  border-bottom:3px red dashed;
 }
 
 /* .align applies this css to all img with class align. */
 /* Aligns images to the center. */
 img.align {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 /* .resize applies this css to all img with class resize. */
 img.resize {
-  max-width: 40%;
-  max-height: 40%;
+  max-width:40%;
+  max-height:40%;
 }

@@ -3,32 +3,32 @@
 #but2 {
   /* Typically you'll set this to none, but for this button we're using the
   transform property instead. */
-  display: 'inline-block';
-  position: fixed;
+  display:'inline-block';
+  position:fixed;
   /* Positioning. */
-  bottom: 20px;
-  right: 20px;
+  bottom:20px;
+  right:20px;
   /* Always on top. */
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: #555;
-  color: black;
-  cursor: pointer;
-  padding: 15px 17px 15px 17px;
-  border-radius: 50%;
-  font-size: 17px;
+  z-index:99;
+  border:none;
+  outline:none;
+  background-color:#555;
+  color:black;
+  cursor:pointer;
+  padding:15px 17px 15px 17px;
+  border-radius:50%;
+  font-size:17px;
   /* Makes the button appear from small to big with JS. */
-  transform: scale(0);
-  transition: transform 0.2s;
+  transform:scale(0);
+  transition:transform 0.2s;
 }
 
 #but2:hover {
-  background-color: #66ccff;
+  background-color:#66ccff;
   /* Makes the color change less abrupt. */
-  transition: background-color 0.2s;
+  transition:background-color 0.2s;
 }
 
 .fas.fa-chevron-up {
-  color: white;
+  color:white;
 }
