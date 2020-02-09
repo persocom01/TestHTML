@@ -20,26 +20,26 @@ Upload cssbox.css to your server and add a stylesheet link to it in your CSS.
 Add your images like this:
 
     <div class="cssbox">
-        <a id="image1" href="#image1"><img class="cssbox_thumb" src="IMG_PATH1" height="300" width="320">
-            <span class="cssbox_full"><img src="IMG_PATH1" /></span>
-        </a>
-        <a class="cssbox_close" href="#void"></a>
-        <a class="cssbox_next" href="#image2">&gt;</a>
+      <a id="image1" href="#image1"><img class="cssbox_thumb" src="IMG_PATH1" height="300" width="320">
+        <span class="cssbox_full"><img src="IMG_PATH1"></span>
+      </a>
+      <a class="cssbox_close" href="#void"></a>
+      <a class="cssbox_next" href="#image2">&gt;</a>
     </div>
     <div class="cssbox">
-        <a id="image2" href="#image2"><img class="cssbox_thumb" src="IMG_PATH2" height="300" width="320">
-            <span class="cssbox_full"><img src="IMG_PATH2" /></span>
-        </a>
-        <a class="cssbox_close" href="#void"></a>
-        <a class="cssbox_prev" href="#image1">&lt;</a>
-        <a class="cssbox_next" href="#image3">&gt;</a>
+      <a id="image2" href="#image2"><img class="cssbox_thumb" src="IMG_PATH2" height="300" width="320">
+        <span class="cssbox_full"><img src="IMG_PATH2"></span>
+      </a>
+      <a class="cssbox_close" href="#void"></a>
+      <a class="cssbox_prev" href="#image1">&lt;</a>
+      <a class="cssbox_next" href="#image3">&gt;</a>
     </div>
     <div class="cssbox">
-        <a id="image3" href="#image3"><img class="cssbox_thumb" src="IMG_PATH3" height="300" width="320">
-            <span class="cssbox_full"><img src="IMG_PATH3" /></span>
-        </a>
-        <a class="cssbox_close" href="#void"></a>
-        <a class="cssbox_prev" href="#image2">&lt;</a>
+      <a id="image3" href="#image3"><img class="cssbox_thumb" src="IMG_PATH3" height="300" width="320">
+        <span class="cssbox_full"><img src="IMG_PATH3"></span>
+      </a>
+      <a class="cssbox_close" href="#void"></a>
+      <a class="cssbox_prev" href="#image2">&lt;</a>
     </div>
 
 In the example above, you add an image with id image2 (make sure that appears
