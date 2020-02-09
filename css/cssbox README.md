@@ -17,6 +17,8 @@ An example page is available in the gh-pages branch, or online on [GitHub Pages]
 ## Usage
 Upload cssbox.css to your server and add a stylesheet link to it in your CSS.
 
+<link href="layout/styles/cssbox.css" rel="stylesheet" type="text/css" media="all">
+
 Add your images like this:
 
     <div class="cssbox">
