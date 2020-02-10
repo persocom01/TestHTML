@@ -21,11 +21,12 @@ right to left. If not set, "ltr" is default. -->
     <meta name="og:description" content="thumbnail description">
     <meta name="og:title" content="thumbnail title">
     <!-- External css stylesheet. -->
-    <link rel="stylesheet" href="./css/master.css">
-    <link rel="stylesheet" href="./css/nav.css">
-    <link rel="stylesheet" href="./css/scrollToTop.css">
-    <!-- Load font from googleapis. -->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300"/>
+    <link rel="stylesheet" href="./layout/styles/framework.css">
+    <link rel="stylesheet" href="./layout/styles/layout.css">
+    <link rel="stylesheet" href="./layout/styles/nav.css">
+    <link rel="stylesheet" href="./layout/styles/backtotop.css">
+    <!-- Load font from googleapis. The css is in layout.css -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300"/>
     <!-- icon determines the icon on the page tab.
     Modern browsers prefer png images. Chrome uses 196 x 196. -->
     <!-- There are icons for other purposes as well, but for the purpose of
@@ -92,7 +93,7 @@ right to left. If not set, "ltr" is default. -->
           but rather represented by a character code or name. -->
           <!-- A list can be found here:
           https://www.rapidtables.com/web/html/html-codes.html -->
-          <p>paragraphs are represented using the &lt;p&gt; element.&#9971;</p>
+          <p class="font-test">paragraphs are represented using the &lt;p&gt; element.&#9971;</p>
           <p>paragraphs come with spaces before and after.</p>
         </section>
 
@@ -168,7 +169,8 @@ right to left. If not set, "ltr" is default. -->
           <li>nested unordered list:</li>
             <ul>
               <li><a title="HTML tutorial" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">Tutorial link</a></li>
-              <!-- mailto: is a special suffix for email links. -->
+              <!-- mailto: is a special suffix for email links. It opens the
+              default mail client on the computer. -->
               <li><a href="mailto:joe@example.com?subject=feedback">email me</a></li>
               <!-- Makes the page jump to element with id but1. -->
               <li><a href="#but1">bottom button</a></li>
@@ -202,6 +204,8 @@ right to left. If not set, "ltr" is default. -->
           <input id="but1" type="submit" value="return to top">
         </form>
       </p>
+      <!-- Code for auto updating copyright to current year. -->
+      <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> - <a href="introduction.html">Clarence Toh</p>
     </footer>
 
     <!-- Return to top button. -->
@@ -210,7 +214,7 @@ right to left. If not set, "ltr" is default. -->
     <a id="but2" href="#" onclick="returnToTop(); return false;"><i class="fas fa-chevron-up"></i></a>
 
     <!-- JS elements are normally placed at the end of the body. -->
-    <script src="introduction.js"></script>
-    <script src="scrollToTop.js"></script>
+    <script src="./layout/scripts/introduction.js"></script>
+    <script src="./layout/scripts/backtotop.js"></script>
   </body>
 </html>
