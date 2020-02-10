@@ -1,6 +1,6 @@
 /* css for the scroll to top button. */
 
-#but2 {
+#backtotop {
   /* Typically you'll set this to none, but for this button we're using the
   transform property instead. */
   display:'inline-block';
@@ -23,7 +23,7 @@
   transition:transform 0.2s;
 }
 
-#but2:hover {
+#backtotop:hover {
   background-color:#66ccff;
   /* Makes the color change less abrupt. */
   transition:background-color 0.2s;
