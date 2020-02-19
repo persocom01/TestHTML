@@ -103,7 +103,9 @@ right to left. If not set, "ltr" is default. -->
         <section>
           <!-- Vistually, strong and em are the same as b and i.
           However, screen readers read them differently. -->
-          <div class=""><strong>strong div <u>element</u></strong></div>
+          <!-- br = line break. If used on its own, it serves as a line space. -->
+          <div class=""><strong>strong div <u>element</u></strong>
+            <br>line break</div>
           <div class=""><em>em div <u>element</u></em></div>
         </section>
 
@@ -115,9 +117,13 @@ right to left. If not set, "ltr" is default. -->
         <blockquote cite="https://www.kingjamesbibleonline.org/Ecclesiastes-12-13/">
           <!-- Code makes the text blocky. You may use it elsewhere as well. -->
           <code>
-            <!-- br = line break. If used on its own, it serves as a line space. -->
-            Let us hear the conclusion of the whole matter:<br>
-            Fear God, and keep his commandments: for this is the whole duty of man.
+            <!-- pre stands for pre defined text. It keeps line breaks and
+            spaces unlike regular text. That's why indentation had to be
+            removed. -->
+            <pre>
+Let us hear the conclusion of the whole matter:
+Fear God, and keep his commandments: for this is the whole duty of man.
+            </pre>
           </code>
           <!-- hr = horizontal rule. -->
           <hr>
@@ -126,12 +132,17 @@ right to left. If not set, "ltr" is default. -->
 
       <!-- aside is often used to put content beside a main article -->
       <aside class="">
+        <!-- html variable keyboard and sample tags are phrase tags that don't
+        actually do anything that hasn't been done before (var = italic, kbd
+        and sample = code), but they exist to be modified by css. -->
+        <!-- ruby allows you to put small superscript text on top another text. -->
         <p>
-          In the code to the left, <var>button</var> is a variable that selects the
-          button at the bottom of this page. You may press <kbd>pgdown</kbd> until
-          you see it. It will result in the button text changing to
-          <samp>I've been clicked</samp> after being clicked once, and
-          <samp>Stop clicking me! >.&lt;</samp> thereafter.
+          In the code to the left, <var>button</var> is a variable that selects
+          the button at the bottom of this page. You may <ruby>press<rt>or hold
+          down</rt></ruby> <kbd>pgdown</kbd> until you see it. It will result
+          in the button text changing to <samp>I've been clicked</samp> after
+          being clicked once, and <samp>Stop clicking me! >.&lt;</samp>
+          thereafter.
         </p>
       </aside>
 
