@@ -25,15 +25,6 @@ body {
   margin:auto;
 }
 
-/* Demonstrates selecting multiple elements. */
-h1, h2, h3, h4, h5, h6, div, p, button {
-  text-align:center;
-}
-
-ul li, ol li, dl {
-  margin-left:20%;
-}
-
 aside {
     width:40%;
     /* rem is a unit equal to the front size of the root element. */
@@ -60,16 +51,6 @@ aside > p {
     color:#66ff99;
 }
 
-footer {
-  text-align:center;
-}
-
-/* Changes the default underline. It is recommended because it looks like a
-link by default. */
-u {
-  text-decoration:none;
-  border-bottom:3px red dashed;
-}
 
 /* .align applies this css to all img with class align. */
 /* Aligns images to the center. */
@@ -83,4 +64,18 @@ img.align {
 img.resize {
   max-width:40%;
   max-height:40%;
+}
+
+/* Fonts
+--------------------------------------------------------------------------------------------------------------- */
+
+.font-test{font-family:'Roboto';}
+
+/* Demonstrates selecting multiple elements. */
+h1, h2, h3, h4, h5, h6, div, p, button {
+  text-align:center;
+}
+
+ul li, ol li, dl {
+  margin-left:20%;
 }
