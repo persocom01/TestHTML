@@ -43,6 +43,12 @@ u {
   overflow:hidden;
 }
 
+.topnav img {
+  float:left;
+  max-width:auto;
+  height:47.33px;
+}
+
 /* Color of links. */
 .topnav a {
   color:inherit;
