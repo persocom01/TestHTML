@@ -1,3 +1,7 @@
+/* By including this line, you don't ahve to import both layout and framework
+files into the html file. Import url is always relative to the css file */
+@import url("framework.css");
+
 /* Footer
 --------------------------------------------------------------------------------------------------------------- */
 
