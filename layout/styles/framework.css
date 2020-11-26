@@ -51,22 +51,6 @@ aside > p {
     color:#66ff99;
 }
 
-
-/* .align applies this css to all img with class align. */
-/* Aligns images to the center. */
-img.align {
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-/* .resize applies this css to all img with class resize. */
-img.resize {
-  max-width:40%;
-  max-height:40%;
-}
-
-
 /* Fonts
 --------------------------------------------------------------------------------------------------------------- */
 
@@ -80,3 +64,16 @@ h1, h2, h3, h4, h5, h6, div, p, button {
 ul li, ol li, dl {
   margin-left:20%;
 }
+
+/* Images
+--------------------------------------------------------------------------------------------------------------- */
+/* .align applies this css to all img with class center. */
+img.center{display:block; margin-left:auto; margin-right:auto;}
+/* While it is possible to write img.resize instead, it appears to be better
+practice to create new classes with descriptive names. */
+.imgsize-80{max-width:80%; max-height:80%;}
+.imgsize-60{max-width:60%; max-height:60%;}
+.imgsize-40{max-width:40%; max-height:40%;}
+.imgsize-20{max-width:20%; max-height:20%;}
+.imgsize-15{max-width:15%; max-height:15%;}
+.imgsize-10{max-width:10%; max-height:10%;}
