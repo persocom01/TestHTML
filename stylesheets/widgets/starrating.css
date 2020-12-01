@@ -1,0 +1,7 @@
+
+.star-rating-container{width:100px; margin:auto;}
+.star-rating-form{display:flex; flex-direction:row-reverse;}
+.white-star{background-image:url("white-star.svg");}
+.white-star:hover{background-image:url("purple-star.svg")}
+.white-star:hover ~ .white-star{background-image:url("purple-star.svg")}
+.star-selector{cursor:pointer; background-size:contain; background-repeat:no-repeat; width:20px; height:20px; display:inline-block;}

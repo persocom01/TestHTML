@@ -1,0 +1,32 @@
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 9rem;
+}
+.rating div {
+  flex: 1;
+  align-self: flex-end;
+  background-color: black;
+  border: 0.1rem solid white;
+}
+.rating div:hover {
+  background-color: lightblue;
+}
+.rating div[data-rating="1"] {
+  height: 5rem;
+}
+.rating div[data-rating="2"] {
+  height: 4rem;
+}
+.rating div[data-rating="3"] {
+  height: 3rem;
+}
+.rating div[data-rating="4"] {
+  height: 2rem;
+}
+.rating div[data-rating="5"] {
+  height: 1rem;
+}
+.rating div:hover ~ div {
+  background-color: lightblue;
+}
