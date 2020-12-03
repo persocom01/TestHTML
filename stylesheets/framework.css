@@ -53,8 +53,14 @@ aside > p {
 
 /* Fonts
 --------------------------------------------------------------------------------------------------------------- */
+/* load font from file */
+@font-face {
+	font-family:'GTWalsheimProRegular';
+	src:url('GT-Walsheim-Pro-Regular.ttf');
+}
 
-.font-test{font-family:'Roboto';}
+.google-font-test{font-family:'Roboto';}
+.file-font-test{font-family:'GTWalsheimProRegular';}
 
 /* Demonstrates selecting multiple elements. */
 h1, h2, h3, h4, h5, h6, div, p, button {
