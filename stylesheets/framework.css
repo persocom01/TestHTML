@@ -56,6 +56,9 @@ aside > p {
 /* load font from file */
 @font-face {
 	font-family:'GTWalsheimProRegular';
+  /* font-weight:400 is the default value. Smaller is light and larger is
+  bolder */
+  font-weight:400;
 	src:url('GT-Walsheim-Pro-Regular.ttf');
 }
 
