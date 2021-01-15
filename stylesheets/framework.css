@@ -53,17 +53,39 @@ aside > p {
 
 /* Fonts
 --------------------------------------------------------------------------------------------------------------- */
-/* load font from file */
+/* load font from file. */
 @font-face {
-	font-family:'GTWalsheimProRegular';
-  /* font-weight:400 is the default value. Smaller is light and larger is
-  bolder */
-  font-weight:400;
+	font-family:'GTWalsheimPro';
 	src:url('GT-Walsheim-Pro-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Add additional custom fonts or define bold or italic versions of the same
+font by adding more @font-face. */
+@font-face {
+  /* To add a bold version of the same font, use the same font family. */
+	font-family:'GTWalsheimPro';
+	src:url('GT-Walsheim-Pro-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  /* To add a bold version of the same font, use the same font family. */
+	font-family:'GTWalsheimPro';
+	src:url('GT-Walsheim-Pro-Regular-Oblique.ttf');
+  font-weight: normal;
+  /* font-style: oblique exists, but in most fonts, italic and oblique are
+  functionally equivalent. It is rare for a font to have a different version
+  for both italic and oblique. */
+  font-style: italic;
 }
 
 .google-font-test{font-family:'Roboto';}
-.file-font-test{font-family:'GTWalsheimProRegular';}
+/* font-weight:400 is the default value. Smaller is lighter and larger is
+bolder. 700 is the equivalent value for bold. */
+.file-font-test{font-family:'GTWalsheimPro';font-weight:400;}
 
 /* Demonstrates selecting multiple elements. */
 h1, h2, h3, h4, h5, h6, div, p, button {
@@ -86,3 +108,33 @@ practice to create new classes with descriptive names. */
 .imgsize-20{max-width:20%; max-height:20%;}
 .imgsize-15{max-width:15%; max-height:15%;}
 .imgsize-10{max-width:10%; max-height:10%;}
+
+/* Grid - RS-MQF 1200 V.2 - https://www.os-templates.com/free-basic-html5-templates/rs-mqf-1200
+--------------------------------------------------------------------------------------------------------------- */
+.one_half,
+.one_third, .two_third,
+.one_quarter, .two_quarter, .three_quarter,
+.one_fifth, .two_fifth, .three_fifth, .four_fifth,
+.one_sixth, .two_sixth, .three_sixth, .four_sixth, .five_sixth{display:inline; float:left; margin:0 0 0 2%; list-style:none;}
+
+.one_half:first-child,
+.one_third:first-child, .two_third:first-child,
+.one_quarter:first-child, .two_quarter:first-child, .three_quarter:first-child,
+.one_fifth:first-child, .two_fifth:first-child, .three_fifth:first-child, .four_fifth:first-child,
+.one_sixth:first-child, .two_sixth:first-child, .three_sixth:first-child, .four_sixth:first-child, .five_sixth:first-child{margin-left:0;}
+
+.first{margin-left:0; clear:left;}
+
+.full_width{display:block; width:100%; clear:both;}
+
+.one_half, .two_quarter, .three_sixth{width:49%;}
+.one_third, .two_sixth{width:32%;}
+.two_third, .four_sixth{width:66%;}
+.one_quarter{width:23.5%;}
+.three_quarter{width:74.5%;}
+.one_fifth{width:18.4%;}
+.two_fifth{width:38.8%;}
+.three_fifth{width:59.2%;}
+.four_fifth{width:79.6%;}
+.one_sixth{width:15%;}
+.five_sixth{width:83%;}
