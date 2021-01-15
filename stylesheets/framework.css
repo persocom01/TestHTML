@@ -64,7 +64,8 @@ aside > p {
 /* Add additional custom fonts or define bold or italic versions of the same
 font by adding more @font-face. */
 @font-face {
-  /* To add a bold version of the same font, use the same font family. */
+  /* To add a bold version of the same font, use the same font family. If left
+  undefined, browsers may programatically bold the font. */
 	font-family:'GTWalsheimPro';
 	src:url('GT-Walsheim-Pro-Bold.ttf');
   font-weight: bold;
@@ -76,10 +77,11 @@ font by adding more @font-face. */
 	font-family:'GTWalsheimPro';
 	src:url('GT-Walsheim-Pro-Regular-Oblique.ttf');
   font-weight: normal;
-  /* font-style: oblique exists, but in most fonts, italic and oblique are
-  functionally equivalent. It is rare for a font to have a different version
-  for both italic and oblique. */
-  font-style: italic;
+  /* In most fonts, font-style:italic and font-style:oblique are functionally
+  equivalent. When the <i></i> tag is used, browsers will use oblique if italic
+  is not defined. If neither is defined, browsers may programatically italize
+  the font. */
+  font-style: oblique;
 }
 
 .google-font-test{font-family:'Roboto';}
