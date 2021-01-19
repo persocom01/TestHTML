@@ -45,7 +45,26 @@ fontawesome is a popular library for creating icons in html using fonts. To use 
 
 * [fontawesome-free-5.15.1-web](https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself)
 
-Usage of the files in the package require the webpage folders to be of a certain structure.
+Usage of the files in the package require the webpage folders to be of a certain structure. The folder name where the stylesheets are put in is not important. What is important is that the fonts are put in a different folder on the same level called `webfonts`.
+
+```
+|-stylesheets
+|-webfonts
+```
+
+Copy the `all.css` file from the `css` folder in the package into the website stylesheet folder, and all the fonts in the `webfonts` folder in the package into a folder with the same name in the website. After which, include the following line in the webpage html file:
+
+```
+<link rel="stylesheet" href="./stylesheets/all.css">g
+```
+
+The alternative to downloading and installing the fontawesome kit is to use a online script as follows:
+
+```
+<script src="https://kit.fontawesome.com/6ab3db8113.js"></script>
+```
+
+You can get your own link via registration on the fontawesome website.
 
 ## Optimization
 
