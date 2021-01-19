@@ -22,6 +22,31 @@ Once installed, the project files have to be put into the WinNMP directory's `WW
 http://127.0.0.1/project_name/file_name
 ```
 
+### Atom packages used:
+
+* atom-live-server
+
+### General packages:
+
+* atom-beautify
+* busy-signal
+* file-icons
+* intentions
+* minimap
+* open_in_cmd
+* project-manager
+* script
+
+## Usage
+
+### using fontawesome icons
+
+fontawesome is a popular library for creating icons in html using fonts. To use it, first download the free package from:
+
+* [fontawesome-free-5.15.1-web](https://fontawesome.com/how-to-use/on-the-web/setup/hosting-font-awesome-yourself)
+
+Usage of the files in the package require the webpage folders to be of a certain structure.
+
 ## Optimization
 
 Many professional websites leave out the .html extensions on links. To do this, you need to modify the .htaccess on the webserver by adding the following code:
@@ -42,18 +67,3 @@ location / {
   }
 }
 ```
-
-### Atom packages used:
-
-* atom-live-server
-
-### General packages:
-
-* atom-beautify
-* busy-signal
-* file-icons
-* intentions
-* minimap
-* open_in_cmd
-* project-manager
-* script

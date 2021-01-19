@@ -62,8 +62,8 @@ aside > p {
   can be given with each file using format(). Recommended font format order:
   woff2, woff, truetype, svg, eot
   the latter two are for compatibility with iOS 4.1 and below and IE8. */
-	src:  url('GT-Walsheim-Pro-Regular.woff') format('woff'),
-        url('GT-Walsheim-Pro-Regular.ttf') format('truetype');
+	src:  url('../webfonts/GT-Walsheim-Pro-Regular.woff') format('woff'),
+        url('../webfonts/GT-Walsheim-Pro-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -74,8 +74,8 @@ font by adding more @font-face. */
   /* To add a bold version of the same font, use the same font family. If left
   undefined, browsers may programatically bold the font. */
 	font-family:'GTWalsheimPro';
-	src:  url('GT-Walsheim-Pro-Bold.woff') format('woff'),
-        url('GT-Walsheim-Pro-Bold.ttf') format('truetype');
+	src:  url('../webfonts/GT-Walsheim-Pro-Bold.woff') format('woff'),
+        url('../webfonts/GT-Walsheim-Pro-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -83,8 +83,8 @@ font by adding more @font-face. */
 @font-face {
   /* To add a bold version of the same font, use the same font family. */
 	font-family:'GTWalsheimPro';
-  src:  url('GT-Walsheim-Pro-Regular-Oblique.woff') format('woff'),
-        url('GT-Walsheim-Pro-Regular-Oblique.ttf') format('truetype');
+  src:  url('../webfonts/GT-Walsheim-Pro-Regular-Oblique.woff') format('woff'),
+        url('../webfonts/GT-Walsheim-Pro-Regular-Oblique.ttf') format('truetype');
   font-weight: normal;
   /* In most fonts, font-style:italic and font-style:oblique are functionally
   equivalent. When the <i></i> tag is used, browsers will use oblique if italic
