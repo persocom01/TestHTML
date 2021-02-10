@@ -177,6 +177,10 @@ This makes only the first or last elements change color. */
   background:#555;
 }
 
+/* vw, vh, vmax and vmin are alternatives to percentage measurements used for
+/* responsive layout design. They are viewport width, viewport height,
+/* viewport max (between width and height) and viewport min respectively.
+/* They are measured in units of 1/100 where 10vw means 10% of viewport width.
 /* Responsive layout
 --------------------------------------------------------------------------------------------------------------- */
 @-ms-viewport{width:device-width;} /* http://msdn.microsoft.com/en-gb/library/ie/hh869615%28v=vs.85%29.aspx */
