@@ -1,4 +1,6 @@
 /* Demonstrates use of custom css. */
+/* To start with the list of css selectors can be found here:
+https://www.w3schools.com/cssref/css_selectors.asp */
 
 /* Makes the screen scroll smoothly instead of jump between intrapage links. */
 html {
@@ -26,29 +28,63 @@ body {
 }
 
 aside {
-    width:40%;
-    /* rem is a unit equal to the front size of the root element. */
-    /* It is different from em being that em is affected when front size of
-    the parent element is changed. */
-    /* padding is the distance text is from it's box. */
-    padding-left:.5rem;
-    /* margin is the distance a box is from other boxes. */
-    margin-left:.5rem;
-    /* float allows an element to vertically span more than 1 line of text,
-    as well as specifies which side of the text it will be. It is none by
-    default. */
-    float:right;
-    /* inset changes the shadow from outside the box to inside. */
-    /* The other arguments are x, y, sharpness (optional), size (optional)
-    and color (default black). */
-    box-shadow:inset 5px 0 5px -5px #66ff99;
-    color:#66ff99;
+  width:40%;
+  /* rem is a unit equal to the front size of the root element. */
+  /* It is different from em being that em is affected when front size of the
+  parent element is changed. */
+  /* padding is the distance text is from it's box. */
+  padding-left:.5rem;
+  /* margin is the distance a box is from other boxes. */
+  margin-left:.5rem;
+  /* float allows an element to vertically span more than 1 line of text, as
+  well as specifies which side of the text it will be. It is none by
+  default. */
+  float:right;
+  /* inset changes the shadow from outside the box to inside. */
+  /* The other arguments are x, y, sharpness (optional), size (optional) and
+  color (default black). */
+  box-shadow:inset 5px 0 5px -5px #66ff99;
 }
 
-/* Applies to p elements whose parent is aside. */
-aside > p {
-    margin:.5rem;
-    color:#66ff99;
+/* Here we learn what happens when we combine multiple css selectors together */
+/* Using target1, target2 is just a shortcut to writing the same css code
+for both targets. */
+aside, p {}
+
+/* target1target2 means both css selectors must be present for it to take
+effect. It is not possible to combine elements with other elements for obvious
+reasons, but combining multiple classes is common. */
+aside.aside-green p {
+  color:#66ff99;
+  margin: .5rem;
+}
+
+/* target1 target2 selects all target2 whose parents can be traced to target1.
+This means target2 may be inside other elements whose parent is target1 */
+ol li {
+  color:#66ff99;
+}
+
+/* target1 > target2 selects all target2 whose immediate parent is target1.
+Parent refers to hierarchy and not code positioning. Thus there can be other
+elements on the same level between target1 and 2. */
+/* When two css overlap, such as this and the previous ol li example, the
+later one will take effect. Thus the more general css should come before the
+more specific if you want both to apply. */
+ol > li {
+  color:#ffa500;
+}
+
+/* target1 ~ target2 selects all target2 which follow target1 (same level).
+This works even if other elements are in between. */
+li ~ div {
+  color:#66ff99;
+}
+
+/* target1 + target2 selects the first target2 which follows target1
+(same level). It does not apply if there are other elements in between. */
+ul + div {
+  color:#ffa500;
 }
 
 /* Fonts

@@ -135,14 +135,15 @@ Fear God, and keep his commandments: for this is the whole duty of man.
       </article>
 
       <!-- aside is often used to put content beside a main article -->
-      <aside class="">
+      <aside class="aside-green">
         <!-- html variable keyboard and sample tags are phrase tags that don't
         actually do anything that hasn't been done before (var = italic, kbd
         and sample = code), but they exist to be modified by css. -->
         <!-- ruby allows you to put small superscript text on top another text. -->
         <p>
-          In the code to the left, <var>button</var> is a variable that selects
-          the button at the bottom of this page. You may <ruby>press<rt>or hold
+          In the code to the left, <var>button</var> is a variable that
+          selects the button at the <span>bottom of this page</span>. You may
+          <ruby>press<rt>or hold
           down</rt></ruby> <kbd>pgdown</kbd> until you see it. It will result
           in the button text changing to <samp>I've been clicked</samp> after
           being clicked once, and <samp>Stop clicking me! >.&lt;</samp>
@@ -183,16 +184,24 @@ Fear God, and keep his commandments: for this is the whole duty of man.
 
       <article class="">
         <ol>
-          <li>ordered list</li>
+          <li>css > (immediate children) selector</li>
+          <li>ordered list has numbers</li>
           <li>nested unordered list:</li>
-            <ul>
-              <li><a class="link" title="HTML tutorial" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">Tutorial link</a></li>
-              <!-- mailto: is a special suffix for email links. It opens the
-              default mail client on the computer. -->
-              <li><a href="mailto:joe@example.com?subject=feedback">email me</a></li>
-              <!-- Makes the page jump to element with id but1. -->
-              <li><a href="#but1">bottom button</a></li>
-            </ul>
+          <ul>
+            <li>css whitespace (all children) selector</li>
+            <li><a class="link" title="HTML tutorial" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">Tutorial link</a></li>
+            <!-- mailto: is a special suffix for email links. It opens the
+            default mail client on the computer. -->
+            <li><a href="mailto:joe@example.com?subject=feedback">email me</a></li>
+            <!-- Makes the page jump to element with id but1. -->
+            <li><a href="#but1">bottom button</a></li>
+          </ul>
+          <div class="">
+            css + (immediate following) selector
+          </div>
+          <div class="">
+            css ~ (all following) selector
+          </div>
         </ol>
       </article>
 

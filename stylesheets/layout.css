@@ -23,7 +23,7 @@ insert text content into content affected ::before and ::after.
 attr(name) is a css function that returns the value of the named attribute of
 the parent element.
 ::before does the same thing but before instead of after. */
-a.link{content:" (" attr(href) ")";}
+a.link::after{content:" (" attr(href) ")";}
 
 /* Navigation
 --------------------------------------------------------------------------------------------------------------- */
