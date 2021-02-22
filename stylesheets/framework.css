@@ -87,6 +87,19 @@ ul + div {
   color:#ffa500;
 }
 
+/* Demonstrates the target:nth-child(an + b) selector that applies css to
+children based on the formula an + b, where n is the counter, where
+3n = multiples of 3, and b is the offset value. The special keywords odd and
+even can also be used. If target is left empty, it will apply to all children,
+which includes non immediate children. */
+dl :nth-child(even) {
+  color:#66ff99;
+}
+
+dl :nth-child(odd) {
+  color:#ffa500;
+}
+
 /* Fonts
 --------------------------------------------------------------------------------------------------------------- */
 /* load font from file. */
