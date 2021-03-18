@@ -18,11 +18,12 @@ u {
 
 /* Demonstrates the ::after pseudo-element, which inserts css into all content
 following the element in question. It does not affect child elements.
-content:"" is a special property that lets you
-insert text content into content affected ::before and ::after.
+content:"" is a special property that lets you insert text content into element
+affected by ::before and ::after.
 attr(name) is a css function that returns the value of the named attribute of
 the parent element.
-::before does the same thing but before instead of after. */
+::before does the same thing but before instead of after.
+:after = ::after, but in CSS2 code. It will still work in CSS3. */
 a.link::after{content:" (" attr(href) ")";}
 
 /* Navigation
