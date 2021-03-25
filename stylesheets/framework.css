@@ -159,6 +159,11 @@ ul li, ol li, dl {
 /* Images
 --------------------------------------------------------------------------------------------------------------- */
 /* .align applies this css to all img with class center. */
+/* When using images inside a <div> element that has borders, there will be an
+an extra white space (around 3px) at the bottom of image. It happens because
+image is an inline-level element so browser adds some whitespace under the
+baseline to adjust other inline elements. display:block is used to get rid of
+this. */
 img.center{display:block; margin-left:auto; margin-right:auto;}
 /* While it is possible to write img.resize instead, it appears to be better
 practice to create new classes with descriptive names. */
