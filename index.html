@@ -7,8 +7,6 @@ right to left. If not set, "ltr" is default. -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <!-- The title appears as the page name in a browser tab. -->
-    <title>HTML test page</title>
     <!-- These meta tags are optional. author can be used to store contact
     information and the others are used by search engines. -->
     <meta name="author" content="persocom01">
@@ -25,7 +23,6 @@ right to left. If not set, "ltr" is default. -->
     <meta name="og:title" content="thumbnail title">
     <!-- External css stylesheet. -->
     <link rel="stylesheet" href="./stylesheets/layout.css">
-    <link rel="stylesheet" href="./stylesheets/backtotop.css">
     <!-- fontawesome stylesheet. -->
     <link rel="stylesheet" href="./stylesheets/all.css">
     <!-- Load font from googleapis. The css is in layout.css -->
@@ -37,6 +34,8 @@ right to left. If not set, "ltr" is default. -->
     <!-- There are icons for other purposes as well, but for the purpose of
     this tutorial, just know that they exist is enough. -->
     <link rel="icon" type="image/png" href="./images/html icon.png">
+    <!-- The title appears as the page name in a browser tab. -->
+    <title>HTML test page</title>
   </head>
 
   <body>
@@ -66,6 +65,17 @@ right to left. If not set, "ltr" is default. -->
         a link instead of the image itself, so exercise caution on use. -->
         <a class="active" href="./index.html">Home</a>
         <a title="HTML tutorial" href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">Tutorial link</a>
+        <div class="dropdown">
+          <!-- A button can be type button, submit, or reset. The latter two
+          concern form functionality. The name attibute can be retrieved using
+          javascript using document.querySelectorAll(selector).name or more
+          commonly will be used as the variable name used to refer to the
+          value passed to the backend when the button is used to submit data. -->
+          <button class="dropbtn" type="button" name="">Examples</button>
+          <div class="dropdown-content">
+            <a href="./animation.html">Animation</a>
+          </div>
+        </div>
         <div class="dropdown">
           <!-- A button can be type button, submit, or reset. The latter two
           concern form functionality. The name attibute can be retrieved using
