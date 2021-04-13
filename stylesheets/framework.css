@@ -2,6 +2,17 @@
 /* To start with the list of css selectors can be found here:
 https://www.w3schools.com/cssref/css_selectors.asp */
 
+/* Demonstrates the use of css variables. Variables can either be local or
+global. :root is a global scope. Local scopes are defined using css selectors
+can can only function within the selection for which they are defined. To call
+a css variable for later, use var(--var-name, #fallback). #fallback is an
+optional color code which will be used if the variable fails to work.
+Technically, you can specify the fallback as another variable. */
+:root {
+--main-text-screamin-green: #66ff99;
+--main-text-orange: #ffa500;
+}
+
 /* Makes the screen scroll smoothly instead of jump between intrapage links. */
 html {
   scroll-behavior:smooth;
@@ -43,7 +54,7 @@ aside {
   /* inset changes the shadow from outside the box to inside. */
   /* The other arguments are x, y, sharpness (optional), size (optional) and
   color (default black). */
-  box-shadow:inset 5px 0 5px -5px #66ff99;
+  box-shadow:inset 5px 0 5px -5px var(--main-text-screamin-green);
 }
 
 /* Here we learn what happens when we combine multiple css selectors together */
@@ -55,14 +66,14 @@ aside, p {}
 effect. It is not possible to combine elements with other elements for obvious
 reasons, but combining multiple classes is common. */
 aside.aside-green p {
-  color:#66ff99;
+  color:var(--main-text-screamin-green);
   margin: .5rem;
 }
 
 /* target1 target2 selects all target2 whose parents can be traced to target1.
 This means target2 may be inside other elements whose parent is target1 */
 ol li {
-  color:#66ff99;
+  color:var(--main-text-screamin-green);
 }
 
 /* target1 > target2 selects all target2 whose immediate parent is target1.
@@ -72,19 +83,19 @@ elements on the same level between target1 and 2. */
 later one will take effect. Thus the more general css should come before the
 more specific if you want both to apply. */
 ol > li {
-  color:#ffa500;
+  color:var(--main-text-orange);
 }
 
 /* target1 ~ target2 selects all target2 which follow target1 (same level).
 This works even if other elements are in between. */
 li ~ div {
-  color:#66ff99;
+  color:var(--main-text-screamin-green);
 }
 
 /* target1 + target2 selects the first target2 which follows target1
 (same level). It does not apply if there are other elements in between. */
 ul + div {
-  color:#ffa500;
+  color:var(--main-text-orange);
 }
 
 /* Demonstrates the target:nth-child(an + b) selector that applies css to
@@ -93,11 +104,11 @@ children based on the formula an + b, where n is the counter, where
 even can also be used. If target is left empty, it will apply to all children,
 which includes non immediate children. */
 dl :nth-child(even) {
-  color:#66ff99;
+  color:var(--main-text-screamin-green);
 }
 
 dl :nth-child(odd) {
-  color:#ffa500;
+  color:var(--main-text-orange);
 }
 
 /* Fonts

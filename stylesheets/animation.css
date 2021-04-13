@@ -1,6 +1,11 @@
-/* Code for css animated snippets. Refer to animation.html for how to use. */
+/* Demonstrates the usee of css animation through animated snippets. Refer to
+animation.html for the appropriate html structures to use them. */
+
+/* In transform: rotate(360deg), rotation is always clockwise. For
+anti-clockwise, transform: rotate(-360deg) instead.  */
 
 /* Spinners
+adapted from: https://loading.io/css/
 --------------------------------------------------------------------------------------------------------------- */
 
 /* lds-broken-ring */
@@ -19,23 +24,14 @@
   border-radius: 50%;
   border: 6px solid #fff;
   border-color: #fff #fff #fff transparent;
-  animation: a-clockwise infinite 1.2s linear;
+  animation: lds-broken-ring infinite 1.2s linear;
 }
-@keyframes a-clockwise {
+@keyframes lds-broken-ring {
   0% {
     transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
-  }
-}
-/* Optional */
-@keyframes a-anticlockwise {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-360deg);
   }
 }
 
@@ -125,7 +121,7 @@ the color's c and m values to the desired starting point. */
   margin: 8px;
   border: 8px solid #fff;
   border-radius: 50%;
-  animation: a-clockwise 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #fff transparent transparent transparent;
 }
 .lds-ring div:nth-child(1) {
