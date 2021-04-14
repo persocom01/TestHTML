@@ -10,11 +10,11 @@ adapted from: https://loading.io/css/
 --------------------------------------------------------------------------------------------------------------- */
 
 :root {
---lds-broken-ring-color: #fff;
-/* To choose a fade color, start with a default, search for color picker and
-reduce the color's c and m values until it fits. */
---lds-default-color: #66ccff;
---lds-default-fade-color: #e6f2ff;
+  --lds-broken-ring-color: #fff;
+  /* To choose a fade color, start with a default, go to
+  https://www.color-hex.com/search and choose the tint just before white. */
+  --lds-default-color: #66ccff;
+  --lds-default-fade-color: #eff9ff;
 }
 
 /* lds-broken-ring */

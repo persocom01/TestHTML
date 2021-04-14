@@ -5,7 +5,9 @@ files into the html file. Import url is always relative to the css file */
 @import url("backtotop.css");
 
 :root {
---nav-maya-blue: #66ccff;
+  --base-maya-blue: #66ccff;
+  --main-text-rose-pink: #ff66cc;
+  --main-text-inchworm: #ccff66;
 }
 
 /* Footer
@@ -56,7 +58,7 @@ a.link::after{content:" (" attr(href) ")";}
   /* Setting color and background on the parent makes it easy for child
   elements to just inherit the color for consistency. */
   background-color:black;
-  color:var(--nav-maya-blue);
+  color:var(--base-maya-blue);
   font-family: Arial;
   /* Overflow determines what happens when content exceeds it's container.
   It is visible by default. Hidden hides it, auto creates a scrollbar. */
@@ -84,7 +86,7 @@ a.link::after{content:" (" attr(href) ")";}
 .topnav a.active {
   background-color:inherit;
   /* Creates underline inside div element. */
-  box-shadow:inset 0 -3px var(--nav-maya-blue);
+  box-shadow:inset 0 -3px var(--base-maya-blue);
   color:inherit;
 }
 
@@ -176,7 +178,7 @@ This makes only the first or last elements change color. */
 
 /* Customizes the imported search icon. */
 .fas.fa-search {
-  color:var(--nav-maya-blue);
+  color:var(--base-maya-blue);
 }
 
 /* Sets hover color change. */

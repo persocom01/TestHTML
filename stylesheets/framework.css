@@ -9,8 +9,25 @@ a css variable for later, use var(--var-name, #fallback). #fallback is an
 optional color code which will be used if the variable fails to work.
 Technically, you can specify the fallback as another variable. */
 :root {
---main-text-screamin-green: #66ff99;
---main-text-orange: #ffa500;
+/* Colors can be chosen by going to https://www.color-hex.com/ and typing in
+a base color hex code. When choosing colors, it bears to keep in mind the
+following terms:
+1. Analogous.
+Analogous colors are next to each other on a color wheel. They are used when
+grouping things that are related to each other.
+2. Complimentary.
+Complementary colors are on the opposite ends of the color wheel. They have the
+greatest possible contrast. You normally choose the cooler of the complimentary
+colors as the base and the warmer as the stand out.
+3. Triadic.
+Triadic colors are a trio of colors equidistant from each other. They are used
+to divide elements into three equally important groups.
+4. Tetradic.
+Tetradic colors are a quartet comprising two pairs of complimentary colors.
+They are used roughly the same way as Triadic. */
+  --base-maya-blue: #66ccff;
+  --main-text-rose-pink: #ff66cc;
+  --main-text-inchworm: #ccff66;
 }
 
 /* Makes the screen scroll smoothly instead of jump between intrapage links. */
@@ -54,7 +71,7 @@ aside {
   /* inset changes the shadow from outside the box to inside. */
   /* The other arguments are x, y, sharpness (optional), size (optional) and
   color (default black). */
-  box-shadow:inset 5px 0 5px -5px var(--main-text-screamin-green);
+  box-shadow:inset 5px 0 5px -5px var(--main-text-inchworm);
 }
 
 /* Here we learn what happens when we combine multiple css selectors together */
@@ -65,15 +82,15 @@ aside, p {}
 /* target1target2 means both css selectors must be present for it to take
 effect. It is not possible to combine elements with other elements for obvious
 reasons, but combining multiple classes is common. */
-aside.aside-green p {
-  color:var(--main-text-screamin-green);
+aside.aside-yellow p {
+  color:var(--main-text-inchworm);
   margin: .5rem;
 }
 
 /* target1 target2 selects all target2 whose parents can be traced to target1.
 This means target2 may be inside other elements whose parent is target1 */
 ol li {
-  color:var(--main-text-screamin-green);
+  color:var(--main-text-rose-pink);
 }
 
 /* target1 > target2 selects all target2 whose immediate parent is target1.
@@ -83,19 +100,19 @@ elements on the same level between target1 and 2. */
 later one will take effect. Thus the more general css should come before the
 more specific if you want both to apply. */
 ol > li {
-  color:var(--main-text-orange);
+  color:var(--main-text-inchworm);
 }
 
 /* target1 ~ target2 selects all target2 which follow target1 (same level).
 This works even if other elements are in between. */
 li ~ div {
-  color:var(--main-text-screamin-green);
+  color:var(--main-text-rose-pink);
 }
 
 /* target1 + target2 selects the first target2 which follows target1
 (same level). It does not apply if there are other elements in between. */
 ul + div {
-  color:var(--main-text-orange);
+  color:var(--main-text-inchworm);
 }
 
 /* Demonstrates the target:nth-child(an + b) selector that applies css to
@@ -104,11 +121,11 @@ children based on the formula an + b, where n is the counter, where
 even can also be used. If target is left empty, it will apply to all children,
 which includes non immediate children. */
 dl :nth-child(even) {
-  color:var(--main-text-screamin-green);
+  color:var(--main-text-rose-pink);
 }
 
 dl :nth-child(odd) {
-  color:var(--main-text-orange);
+  color:var(--main-text-inchworm);
 }
 
 /* Fonts
