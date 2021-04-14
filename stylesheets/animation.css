@@ -3,10 +3,19 @@ animation.html for the appropriate html structures to use them. */
 
 /* In transform: rotate(360deg), rotation is always clockwise. For
 anti-clockwise, transform: rotate(-360deg) instead.  */
+/* In animations with only 2 frames, you may leave out the 0% and 100%. */
 
 /* Spinners
 adapted from: https://loading.io/css/
 --------------------------------------------------------------------------------------------------------------- */
+
+:root {
+--lds-broken-ring-color: #fff;
+/* To choose a fade color, start with a default, search for color picker and
+reduce the color's c and m values until it fits. */
+--lds-default-color: #66ccff;
+--lds-default-fade-color: #e6f2ff;
+}
 
 /* lds-broken-ring */
 
@@ -22,8 +31,8 @@ adapted from: https://loading.io/css/
   height: 64px;
   margin: 8px;
   border-radius: 50%;
-  border: 6px solid #fff;
-  border-color: #fff #fff #fff transparent;
+  border: 6px solid var(--lds-broken-ring-color);
+  border-color: var(--lds-broken-ring-color) var(--lds-broken-ring-color) var(--lds-broken-ring-color) transparent;
   animation: lds-broken-ring infinite 1.2s linear;
 }
 @keyframes lds-broken-ring {
@@ -36,8 +45,6 @@ adapted from: https://loading.io/css/
 }
 
 /* lds-default */
-/* To choose color, start with a default, search for color picker and reduce
-the color's c and m values to the desired starting point. */
 
 .lds-default {
   display: inline-block;
@@ -49,7 +56,7 @@ the color's c and m values to the desired starting point. */
   position: absolute;
   width: 6px;
   height: 6px;
-  background: #66ccff;
+  background: var(--lds-default-color);
   border-radius: 50%;
   animation: lds-default 1.6s linear infinite;
 }
@@ -96,11 +103,11 @@ the color's c and m values to the desired starting point. */
 @keyframes lds-default {
   0%, 10%, 60%, 100% {
     transform: scale(1);
-    background: #e6f2ff;
+    background: var(--lds-default-fade-color);
   }
   20% {
     transform: scale(2.5);
-    background: #66ccff;
+    background: var(--lds-default-color);
   }
 }
 
