@@ -37,9 +37,7 @@ http://127.0.0.1/project_name/file_name
 * project-manager
 * script
 
-## Usage
-
-### using fontawesome icons
+### fontawesome icons
 
 fontawesome is a popular library for creating icons in html using fonts. To use it, first download the free package from:
 
@@ -65,6 +63,18 @@ The alternative to downloading and installing the fontawesome kit is to use a on
 ```
 
 You can get your own link via registration on the fontawesome website.
+
+## Usage
+
+### fontawesome icons
+
+fontawesome icons are used by using a fontawesome class in an html element. Officially, the i element is used, but others, such as span, are also possible:
+
+```
+<i class="fas fa-circle-notch"></i>
+```
+
+To find out exactly what class to use for the icon you want, go to https://fontawesome.com/ and search for it in the top left search bar.
 
 ## Optimization
 

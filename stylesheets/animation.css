@@ -1,11 +1,27 @@
 /* Demonstrates the usee of css animation through animated snippets. Refer to
 animation.html for the appropriate html structures to use them. */
 
+/* The animation css property takes in up to 6 arguments:
+animation:
+  animation-name
+  animation-duration
+  animation-timing-function
+  animation-delay
+  animation-iteration-count
+  animation-direction
+;
+Typically, only name, durationv (typically infinite) and timing function
+(basic being linear) are sufficient. How to write other timing functions in css
+can be found here: https://easings.net/
+Besides the 6, there are more properties you can read up here:
+https://www.w3schools.com/css/css3_animations.asp
+*/
 /* In transform: rotate(360deg), rotation is always clockwise. For
-anti-clockwise, transform: rotate(-360deg) instead.  */
+anti-clockwise, transform: rotate(-360deg) instead, or alternatively, set
+animation-direction to reverse.  */
 /* In animations with only 2 frames, you may leave out the 0% and 100%. */
 
-/* Spinners
+/* css spinners
 adapted from: https://loading.io/css/
 --------------------------------------------------------------------------------------------------------------- */
 
@@ -349,6 +365,52 @@ adapted from: https://loading.io/css/
   }
   100% {
     opacity: 0;
+  }
+}
+
+/* Font awesome spinners
+--------------------------------------------------------------------------------------------------------------- */
+
+.font-spinners {
+  font-size: 4rem;
+}
+
+.fas.fa-circle-notch {
+  animation: fa-clockwise infinite 1.2s linear;
+}
+.far.fa-snowflake {
+  animation: fa-clockwise infinite 1.2s linear;
+}
+.fas.fa-crosshairs {
+  color: red;
+  animation: fa-heartbeat 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+@keyframes fa-clockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fa-heartbeat {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
   }
 }
 
