@@ -16,6 +16,7 @@ can be found here: https://easings.net/
 Besides the 6, there are more properties you can read up here:
 https://www.w3schools.com/css/css3_animations.asp
 */
+
 /* In transform: rotate(360deg), rotation is always clockwise. For
 anti-clockwise, transform: rotate(-360deg) instead, or alternatively, set
 animation-direction to reverse.  */
